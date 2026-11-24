@@ -1,0 +1,9 @@
+project: savantenvs/swtpm
+target: nvstore-linear
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/nvstore-linear/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_nvstore_linear
+    libfuzzer: true
+    timeout: 10

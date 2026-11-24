@@ -1,0 +1,1 @@
+profile = {"Name":"custom","Algorithms":"rsa,rsa-min-size=2048,hmac,aes,aes-min-size=128,mgf1,keyedhash,xor,sha256,sha384,null,rsassa,rsaes,rsapss,oaep,ecdsa,ecdh,ecc,ecc-nist-p256,ecc-nist-p384,symcipher,cfb","Commands":"0x11f-0x122,0x124-0x12e"}

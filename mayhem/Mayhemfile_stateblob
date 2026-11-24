@@ -1,0 +1,9 @@
+project: savantenvs/swtpm
+target: stateblob
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/stateblob/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_stateblob
+    libfuzzer: true
+    timeout: 10

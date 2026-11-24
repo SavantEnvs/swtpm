@@ -1,0 +1,9 @@
+project: savantenvs/swtpm
+target: ctrlchannel
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/ctrlchannel/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_ctrlchannel
+    libfuzzer: true
+    timeout: 10

@@ -1,0 +1,3 @@
+create_certs_tool_options = --tpm2 ${HOME}/x ${UNSET_VAR}tail ${unterminated
+profile_file = ${HOME}/profile.json # comment
+profile =   {"Name":"custom:abc"}   # trailing

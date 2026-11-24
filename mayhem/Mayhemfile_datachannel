@@ -1,0 +1,9 @@
+project: savantenvs/swtpm
+target: datachannel
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/datachannel/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_datachannel
+    libfuzzer: true
+    timeout: 10
